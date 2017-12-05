@@ -1,2 +1,2 @@
 # spwa-server
-Individual singe page web application assignment
+Individual single page web application assignment (server)
