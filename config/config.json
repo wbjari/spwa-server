@@ -1,5 +1,5 @@
 {
     "port": 3000,
-    "mongoDbUri": "mongodb://root:abc123@ds133296.mlab.com:33296/music",
+    "mongoDbUri": "mongodb://mradmin:winter2018@ds127634.mlab.com:27634/movierating",
     "allowOrigin": "*"
 }
