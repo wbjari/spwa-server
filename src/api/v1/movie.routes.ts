@@ -35,17 +35,17 @@ routes.post('/', (req, res, next) => {
         .catch(next);
 });
 
-routes.put('/:id', (req, res, next) => {
-    const movieId = req.params.id;
-    const movieProps = req.body;
+// routes.put('/:id', (req, res, next) => {
+//     const movieId = req.params.id;
+//     const movieProps = req.body;
 
-    Movie.findByIdAndUpdate({
-        _id: movieId
-    }, movieProps)
-        .then(() => Movie.findById({ _id: movieId }))
-        .then((movie) => res.status(202).json(movie))
-        .catch(next);
-});
+//     Movie.findByIdAndUpdate({
+//         _id: movieId
+//     }, movieProps)
+//         .then(() => Movie.findById({ _id: movieId }))
+//         .then((movie) => res.status(202).json(movie))
+//         .catch(next);
+// });
 
 routes.delete('/:id', (req, res, next) => {
     const movieId = req.params.id;
